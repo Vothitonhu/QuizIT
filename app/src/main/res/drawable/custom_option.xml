@@ -14,7 +14,7 @@
                 android:topLeftRadius="140dp"
                 android:topRightRadius="140dp"/>
             <solid
-            android:color="#d43067"/>
+            android:color="#55C73E"/>
         </shape>
     </item>
     <item>
@@ -29,7 +29,7 @@
                 android:topLeftRadius="140dp"
                 android:topRightRadius="140dp"/>
             <solid
-                android:color="#ff4081"/>
+                android:color="#692C8A"/>
         </shape>
     </item>
 </selector>

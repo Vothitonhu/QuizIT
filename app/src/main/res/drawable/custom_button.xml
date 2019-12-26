@@ -14,7 +14,7 @@
       <size
            android:height="30dp"/>
        <solid
-           android:color="#2a756d"/>
+           android:color="#AF8D3A"/>
    </shape>
     </item>
     <item>
@@ -29,7 +29,7 @@
             <size
                 android:height="30dp"/>
             <solid
-                android:color="#379e93"/>
+                android:color="#185CC2"/>
         </shape>
     </item>
 </selector>

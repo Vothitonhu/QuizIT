@@ -16,7 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="#61D342"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
@@ -34,14 +34,15 @@
             android:layout_width="match_parent"
             android:background="#29b4b4"
             android:layout_height="wrap_content" >
+
             <ImageView
-                android:layout_width="match_parent"
-                android:padding="100dp"
-                android:layout_height="190dp"
-                android:src="@drawable/question"
                 android:id="@+id/i"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
                 android:layout_gravity="center_horizontal"
-                android:scaleType="centerCrop"/>
+                android:padding="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/people" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
