@@ -1,4 +1,4 @@
 # QuizIT
-Respository of the 
+NHÓM 3
 ĐỀ TÀI CUỐI KỲ MÔN LẬP TRÌNH ANDROID
 APP: ENGLISH FOR IT
