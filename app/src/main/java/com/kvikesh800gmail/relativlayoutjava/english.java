@@ -44,6 +44,7 @@ public class english extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         //No code because we have already created the database
+
     }
 
     public void createDatabase() {
@@ -52,13 +53,9 @@ public class english extends SQLiteOpenHelper {
 
     private void createDB() {
 
-        boolean dbexist = DBexists();//calling the function to check db exists or not
-        if (!dbexist)//if database doesnot exist
-        {
-
             this.getReadableDatabase();//Create an empty file
             copyDBfromResource();//copy the database file information of assets folder to newly create file
-        }
+
     }
 
     private void copyDBfromResource() {
@@ -98,7 +95,7 @@ public class english extends SQLiteOpenHelper {
             db = SQLiteDatabase.openDatabase(databasePath, null, SQLiteDatabase.OPEN_READWRITE);
             db.setLocale(Locale.getDefault());
             db.setVersion(1);
-            db.setLockingEnabled(true);
+            db.setLockingEnabled(false);
         } catch (SQLException e) {
             Log.e("Sqlite", "Database not found");
         }

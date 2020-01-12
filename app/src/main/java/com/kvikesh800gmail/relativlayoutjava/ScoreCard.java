@@ -20,7 +20,7 @@ public class ScoreCard extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         SharedPreferences sharedPreferences = getSharedPreferences("Score", Context.MODE_PRIVATE);
         a1 = (TextView) findViewById(R.id.computer);
-        a2 = (TextView) findViewById(R.id.sports);
+
         a3 = (TextView) findViewById(R.id.inventions);
         a4 = (TextView) findViewById(R.id.general);
         a5 = (TextView) findViewById(R.id.science);
@@ -31,7 +31,7 @@ public class ScoreCard extends AppCompatActivity {
         a10 = (TextView) findViewById(R.id.currency);
         try {
             a1.setText("" + sharedPreferences.getInt("Computer", 0));
-            a2.setText("" + sharedPreferences.getInt("Sports", 0));
+
             a3.setText("" + sharedPreferences.getInt("Inventions", 0));
             a4.setText("" + sharedPreferences.getInt("General", 0));
             a5.setText("" + sharedPreferences.getInt("Science", 0));

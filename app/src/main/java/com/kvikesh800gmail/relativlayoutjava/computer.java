@@ -53,13 +53,10 @@ public class computer extends SQLiteOpenHelper {
 
     private void createDB() {
 
-        boolean dbexist = DBexists();//calling the function to check db exists or not
-        if (!dbexist)//if database doesnot exist
-        {
 
             this.getReadableDatabase();//Create an empty file
             copyDBfromResource();//copy the database file information of assets folder to newly create file
-        }
+
     }
 
     private void copyDBfromResource() {
