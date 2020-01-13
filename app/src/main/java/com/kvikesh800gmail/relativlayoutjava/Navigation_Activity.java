@@ -213,10 +213,10 @@ public class Navigation_Activity extends AppCompatActivity
         } else if (id == R.id.nav_feedback) {
             Intent intent = new Intent(Intent.ACTION_SEND);
             intent.setData(Uri.parse("mailto:"));
-            String[] recipents = {"kvikesh800@gmail.com"};
+            String[] recipents = {"Test@gmail.com"};
             intent.setType("message/rfc822");
             intent.putExtra(Intent.EXTRA_EMAIL, recipents);
-            intent.putExtra(Intent.EXTRA_SUBJECT, "QuizBook Reviews");
+            intent.putExtra(Intent.EXTRA_SUBJECT, "QuizIT Reviews");
             Intent chooser = Intent.createChooser(intent, "Send Feedback Via");
             startActivity(chooser);
 
