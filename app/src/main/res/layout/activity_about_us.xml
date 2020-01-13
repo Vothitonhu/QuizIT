@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="24sp"
-                android:text="QuizBook"
+                android:text="QuizIT"
                 android:layout_below="@+id/i"
                 android:id="@+id/q"
                 android:layout_centerHorizontal="true"
@@ -67,14 +67,14 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:gravity="center"
-            android:text="@string/note"
+            android:text="This app created by 5 members from Danang University of Education and Sicence"
             android:layout_margin="10dp" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
-                android:text="Visit Website"
+                android:text=""
                 android:textColor="#56a15a"
                 android:background="?attr/selectableItemBackground"
                 android:id="@+id/visit_website"/>

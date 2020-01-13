@@ -28,7 +28,7 @@ public class Questions extends AppCompatActivity {
     Button play_button;
     String get;
     //Objects of different classes
-    books Books;
+
     sports Sports;
     currency Currency;
     computer Computer;
@@ -71,11 +71,7 @@ public class Questions extends AppCompatActivity {
             mediaPlayer.setLooping(true);
         }
 
-        //Now the linking of all the datbase files with the Question activity
-        Books = new books(this);
-        Books.createDatabase();
-        Books.openDatabase();
-        Books.getWritableDatabase();
+
 
         Capitals = new capitals(this);
         Capitals.createDatabase();
@@ -324,12 +320,8 @@ public class Questions extends AppCompatActivity {
                 Collections.shuffle(list);
                 c7=1;
             }
-            Ques = Books.readQuestion(list.get(j));
-            Opta = Books.readOptionA(list.get(j));
-            Optb = Books.readOptionB(list.get(j));
-            Optc = Books.readOptionC(list.get(j));
-            Optd = Books.readOptionD(list.get(j));
-            global = Books.readAnswer(list.get(j++));
+
+
         } else if (get.equals("c8")) {
             if (c8 == 0) {
                 for (i = 1; i < 26; i++) {
